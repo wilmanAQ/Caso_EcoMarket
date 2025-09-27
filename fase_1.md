@@ -7,15 +7,15 @@ Asistente de IA (chatbot) para la empresa EcoMarket.
 - **Objetivo Principal:** Automatizar la respuesta a consultas frecuentes de clientes sobre el estado de pedidos, las políticas, devoluciones y características de los productos
 - **Meta Técnica:** Desarrollar un servicio de backend robusto y de baja latencia que se conecte a un modelo de lenguaje (LLM) para generar respuestas precisas y contextualizadas segun el contexto.
 
-### 🛠️ 2. Stack Tecnológico y Selección de Modelo
+#### 🛠️ 2. Stack Tecnológico y Selección de Modelo
 
-### 1. Tipo de modelo seleccionado
+### Tipo de modelo seleccionado
 
 - El tipo de modelo seleccionado es un **modelo de lenguaje grande optimizado, gpt-4.1-mini**, que combina la potencia de los LLMs con eficiencia en consumo y velocidad.
   Permite mantener conversaciones largas y coherentes, adaptarse a preguntas generales y especializadas, y realizar tareas automáticas vinculadas al e-commerce como soporte,
   recomendaciones y gestión de pedidos
 
-### 2. Razones para elegir este modelo
+### Razones para elegir este modelo
 
 **Precisión vs. fluidez:**
 
@@ -27,7 +27,7 @@ Asistente de IA (chatbot) para la empresa EcoMarket.
 - gpt-4.1-mini es mucho más barato y rápido por consulta que GPT-4 completo, permitiendo escalar a miles de conversaciones simultáneas sin comprometer calidad.
   Permite integración multimodal y ventanas largas de contexto, útiles para resolver operaciones complejas sin fragmentar la información.
 
-### 3. Arquitectura propuesta
+#### 3. Arquitectura propuesta
 
 - **Integración híbrida:** El modelo actuaría como backend conversacional, conectado vía API al sistema central de EcoMarket.
 - **Enlace con base de datos:** Se integraría con el catálogo de productos, inventario y sistema de gestión de envíos, habilitando respuestas precisas, personalizadas y basadas en datos actualizados en tiempo real.
