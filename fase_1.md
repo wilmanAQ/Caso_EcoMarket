@@ -44,6 +44,9 @@ Asistente de IA (chatbot) para la empresa EcoMarket.
 | Facilidad de integración | API estándar, SDKs disponibles y despliegue en entornos cloud o locales. Rápida integración con sistemas existentes y workflows|
 | Calidad de respuesta | Mantiene coherencia y precisión tanto para preguntas generales como consultas específicas (pedidos, productos, envíos), gracias a su ventana de contexto extendida y capacidades multimodales|
 
+**Conclusión:**  
+gpt-4.1-mini es la opción más adecuada para la empresa EcoMarket, combinando eficiencia en costes, experiencia conversacional fluida, fácil integración con la base de datos y arquitectura adaptable. Su potencial de personalización y capacidad para escalar, lo hacen ideal frente a modelos pequeños afinados (que acotan demasiado) o modelos generales costosos (que sobrepasan las necesidades de negocio en e-commerce mediano).
+
 
 
 
