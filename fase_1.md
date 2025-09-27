@@ -35,6 +35,16 @@ Asistente de IA (chatbot) para la empresa EcoMarket.
 
 - **Propósito general con especialización progresiva:** Inicialmente se usaría gpt-4.1-mini como un modelo de propósito general, integrándose con datos internos para respuestas específicas; posteriormente, si el volumen y la particularidad del negocio lo ameritan, se puede afinar el modelo con conversaciones y datos históricos de EcoMarket.
 
+### 4. Justificación basada en criterios
+
+| Criterio            | Justificación con gpt-4.1-mini |
+|---------------------|--------------------------------|
+| Costo               | Muy bajo comparado con LLMs grandes. Permite alto volumen sin sobrecostos y es sostenible para startups y escalamiento progresivo |
+| Escalabilidad       | Optimizados para despliegue en múltiples canales y concurrentes, pudiendo servir miles de sesiones en paralelo sin saturar infraestructura |
+| Facilidad de integración | API estándar, SDKs disponibles y despliegue en entornos cloud o locales. Rápida integración con sistemas existentes y workflows|
+| Calidad de respuesta | Mantiene coherencia y precisión tanto para preguntas generales como consultas específicas (pedidos, productos, envíos), gracias a su ventana de contexto extendida y capacidades multimodales|
+
+
 
 
 
