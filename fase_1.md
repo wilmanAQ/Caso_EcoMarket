@@ -9,13 +9,13 @@ Asistente de IA (chatbot) para la empresa EcoMarket.
 
 #### 🛠️ 2. Stack Tecnológico y Selección de Modelo
 
-### Tipo de modelo seleccionado
+##### Tipo de modelo seleccionado
 
 - El tipo de modelo seleccionado es un **modelo de lenguaje grande optimizado, gpt-4.1-mini**, que combina la potencia de los LLMs con eficiencia en consumo y velocidad.
   Permite mantener conversaciones largas y coherentes, adaptarse a preguntas generales y especializadas, y realizar tareas automáticas vinculadas al e-commerce como soporte,
   recomendaciones y gestión de pedidos
 
-### Razones para elegir este modelo
+##### Razones para elegir este modelo
 
 **Precisión vs. fluidez:**
 
