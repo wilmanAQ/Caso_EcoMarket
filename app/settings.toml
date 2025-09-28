@@ -1,0 +1,21 @@
+[general]
+model_name = "gpt-4.1-mini"
+deployment = "gpt-4.1-mini"
+api_version = "2024-12-01-preview"
+temperature = 0.4
+max_tokens = 1000
+
+[FastAPI]
+endpoint1 = "https://datasets-server.huggingface.co/rows?dataset=DaviAlmeidaDS%2Fpedidos_medicamentos&config=default&split=train&offset=0&length=50"
+endpoint2 = "https://datasets-server.huggingface.co/rows?dataset=dwb2023%2Fblackbird-orders&config=default&split=train&offset=0&length=100"
+endpoint = "https://datasets-server.huggingface.co/rows?dataset=cam2149%2FEcoMarket&config=default&split=train&offset=0&length=100"
+
+[endpointIAGen]
+endpoint = "https://openaigeneai.openai.azure.com/"
+
+[chats]
+responseBasic = "Dame el estado del pedido de Atorvastatina"
+responseBasicByOrderId = "Dame el estado del pedido 20009"
+responseImprovedByOrderId = "Dame el estado del id pedido 20109"
+
+
