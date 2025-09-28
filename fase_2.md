@@ -1,4 +1,4 @@
-```markdown
+
 # Fase 2: Evaluación de Fortalezas, Limitaciones y Riesgos Éticos
 
 ## Fortalezas
