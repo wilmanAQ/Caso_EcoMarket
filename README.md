@@ -1,4 +1,4 @@
-# Optimización de Servicio Ecommerce con Chatbot IA
+# Caso de Estudio: Optimización de la Atención al Cliente en una Empresa EcoMarket de E-commerce.
 
 Este proyecto implementa un sistema inteligente de atención al cliente para ecommerce, utilizando un chatbot basado en modelos de lenguaje de Azure OpenAI y FastAPI. Permite gestionar pedidos, devoluciones y consultas, integrando prompts personalizados y acceso a datos externos.
 
