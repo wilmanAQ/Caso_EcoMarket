@@ -27,7 +27,7 @@ Asistente de IA (chatbot) para la empresa EcoMarket.
 - gpt-4.1-mini es mucho más barato y rápido por consulta que GPT-4 completo, permitiendo escalar a miles de conversaciones simultáneas sin comprometer calidad.
   Permite integración multimodal y ventanas largas de contexto, útiles para resolver operaciones complejas sin fragmentar la información.
 
-#### 3. Arquitectura propuesta
+#### 🧠 3. Arquitectura propuesta
 
 - **Integración híbrida:** El modelo actuaría como backend conversacional, conectado vía API al sistema central de EcoMarket.
 - **Enlace con base de datos:** Se integraría con el catálogo de productos, inventario y sistema de gestión de envíos, habilitando respuestas precisas, personalizadas y basadas en datos actualizados en tiempo real.
@@ -35,7 +35,7 @@ Asistente de IA (chatbot) para la empresa EcoMarket.
 
 - **Propósito general con especialización progresiva:** Inicialmente se usaría gpt-4.1-mini como un modelo de propósito general, integrándose con datos internos para respuestas específicas; posteriormente, si el volumen y la particularidad del negocio lo ameritan, se puede afinar el modelo con conversaciones y datos históricos de EcoMarket.
 
-### 4. Justificación basada en criterios
+####  ⚠️ 4. Justificación basada en criterios
 
 | Criterio            | Justificación con gpt-4.1-mini |
 |---------------------|--------------------------------|
