@@ -25,6 +25,23 @@ No se encontró ningún pedido con el producto "Atorvastatina" en el registro pr
 ==========Respuesta del prompt BASIC by OrderId:==========
 El pedido con número de seguimiento 20009, correspondiente a la orden ECO-2509-20009 para Laura Díaz en Bucaramanga, tiene el siguiente estado:
 
+
+////////////////////////////////////////////////////
+
+| Section                         | Details                                               | Message                                                                                                         |
+|--------------------------------|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| --------        |  Initializing FastAPI:           | INFO: Started server process [45824] <br> INFO: Waiting for application startup. <br> INFO: Application startup complete. <br> INFO: Uvicorn running on [http://127.0.0.1:8000](http://127.0.0.1:8000/) (Press CTRL+C to quit) |
+| Model Selected | GPT-4.1-mini                                        | -                                                                                                              |
+| -------       | INFO: 127.0.0.1:55358 - "GET /get_order HTTP/1.1" 200 OK | -                                                                                                              |
+| *Response to BASIC prompt | -                                                  | No orders found with product "Atorvastatin" in the provided log. Could you verify the product name or provide a tracking number to assist you better? |
+|  Response to BASIC prompt by OrderId  | Tracking number: 20009                             | The order with tracking number 20009, corresponding to order ECO-2509-20009 for Laura Díaz in Bucaramanga, has the following status: |
+
+
+
+
+////////////////////////////////////////////////////
+
+
 - Producto: Premium Producto 698 (Categoría: Alimentos)
 - Estado: Entregado
 - Transportadora: Coordinadora
