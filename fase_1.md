@@ -1,13 +1,10 @@
 ## Caso de Estudio: Optimización de la Atención al Cliente en una Empresa EcoMarket de E-commerce .
+- El caso de estudio que abordaremos se centra en "Acelerar y mejorar la calidad de las respuestas en el servicio de atención al cliente" de una empresa de comercio electrónico.
+La empresa, llamada "EcoMarket", vende productos sostenibles y está experimentando un rápido crecimiento. Han notado un cuello de botella en su departamento de soporte, que recibe miles de consultas diarias a través de chat, correo electrónico y redes sociales. El 80% de estas consultas son repetitivas (estado del pedido, devoluciones, características del producto) y el 20% restante son más complejas, requiriendo un toque humano y empatía (quejas, problemas técnicos, sugerencias). Actualmente, el tiempo de respuesta promedio es de 24 horas, lo que está afectando la satisfacción del cliente.
 
-### Selección y Justificación del Modelo de IA
-#### 🎯 1. Descripción General y Objetivos Técnicos
-Asistente de IA (chatbot) para la empresa EcoMarket.
+# FASE No.1
 
-- **Objetivo Principal:** Automatizar la respuesta a consultas frecuentes de clientes sobre el estado de pedidos, las políticas, devoluciones y características de los productos
-- **Meta Técnica:** Desarrollar un servicio de backend robusto y de baja latencia que se conecte a un modelo de lenguaje (LLM) para generar respuestas precisas y contextualizadas segun el contexto.
-
-#### 🛠️ 2. Stack Tecnológico y Selección de Modelo
+El objetivo principal de esta fase es automatizar la atención de las consultas más frecuentes de los clientes, incluyendo el estado de pedidos, políticas de devolución y características de productos. Se busca desarrollar un servicio que elimine el cuello de botella actual y las dificultades operativas que esta presentando la empresa EcoMarket, mediante la implementación de un modelo de lenguaje avanzado (LLM). Este modelo debe ser capaz de generar respuestas rápidas, precisas y contextualizadas, optimizando la experiencia del cliente y reduciendo significativamente el tiempo de respuesta promedio.
 
 ##### Tipo de modelo seleccionado
 
@@ -46,6 +43,11 @@ Asistente de IA (chatbot) para la empresa EcoMarket.
 
 **Conclusión:**  
 gpt-4.1-mini es la opción más adecuada para la empresa EcoMarket, combinando eficiencia en costes, experiencia conversacional fluida, fácil integración con la base de datos y arquitectura adaptable. Su potencial de personalización y capacidad para escalar, lo hacen ideal frente a modelos pequeños afinados (que acotan demasiado) o modelos generales costosos (que sobrepasan las necesidades de negocio en e-commerce mediano).
+
+**------------------------------------------------------------------------------------------------------------------------------------------**
+# FASE No.2
+
+
 
 
 
