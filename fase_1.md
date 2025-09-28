@@ -17,13 +17,13 @@ Asistente de IA (chatbot) para la empresa EcoMarket.
 
 ##### Razones para elegir este modelo
 
-#####**Precisión vs. fluidez:**
+##### **Precisión vs. fluidez:**
 
 - gpt-4.1-mini ofrece un excelente equilibrio entre precisión (suficiente para interpretar intenciones y responder dudas de pedidos) y fluidez (capacidad para mantener conversaciones naturales y variadas), superando a modelos pequeños finamente ajustados en flexibilidad y performance global para atención y ventas.
 
 - Modelos más grandes aumentan coste y latencia, y uno pequeño afinado limita la cobertura de preguntas abiertas o inesperadas, lo cual es crítico en comercio electrónico.
   
-#####**Coste y rendimiento:**
+##### **Coste y rendimiento:**
 - gpt-4.1-mini es mucho más barato y rápido por consulta que GPT-4 completo, permitiendo escalar a miles de conversaciones simultáneas sin comprometer calidad.
   Permite integración multimodal y ventanas largas de contexto, útiles para resolver operaciones complejas sin fragmentar la información.
 
