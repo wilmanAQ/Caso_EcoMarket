@@ -15,72 +15,85 @@ El sistema puede obtener pedidos desde fuentes externas y procesar solicitudes d
 ==========::==========
 ==========Inicializando FastAPI:==========
 ==========::==========
-INFO:     Started server process [32408]
+INFO:     Started server process [40728]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ==========Modelo seleccionado: gpt-4.1-mini==========
 ==========::==========
-INFO:     127.0.0.1:57296 - "GET /get_order HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59223 - "GET /get_order HTTP/1.1" 200 OK
 ==========::==========
 ==========Respuesta del prompt BASIC:==========
-No se encontró ningún pedido relacionado con el producto "Atorvastatina" en nuestro sistema. ¿Podrías verificar el nombre del producto o proporcionar el número de seguimiento o ID de pedido para ayudarte mejor?
+No se encontró ningún pedido con el producto "Atorvastatina" en nuestra base de datos. Por favor, verifica el nombre del producto o 
+proporciona el número de seguimiento o el ID del pedido para que pueda ayudarte mejor.
 ==========::==========
 ==========Respuesta del prompt BASIC by OrderId:==========
-El pedido con número de seguimiento 20009 tiene el estado: Entregado. Puedes verificar más detalles y el seguimiento en el siguiente enlace: https://tracking.ecomarket.example/coordinadora/20009. ¿Hay algo más en lo que pueda ayudarte?
+El pedido con número de seguimiento 20009 y ID ECO-2509-20009 ha sido entregado. Fue enviado a Bucaramanga y el transportista fue 
+Coordinadora. Puedes verificar más detalles y el seguimiento en este enlace: https://tracking.ecomarket.example/coordinadora/20009. 
+¿Hay algo más en lo que pueda ayudarte?
 ==========::==========
 ==========Respuesta del prompt IMPROVED:==========
 ==========::==========
-Para poder ayudarte con el estado del pedido, necesito que me proporciones el número de seguimiento del pedido de Atorvastatina. Así podré buscar la información precisa y actualizada para ti.
+Soy el Asistente de Servicio al Cliente. Estoy aquí para informarte sobre el estado de tu pedido y ayudarte con cualquier otra consulta 
+relacionada con compras en la tienda.
+
+He buscado en nuestros registros, pero no aparece ningún pedido con el producto "Atorvastatina". Por favor, si tienes el número de 
+seguimiento o el número de pedido, podría ayudarte a encontrar el estado exacto de tu compra.
+
+¿Te gustaría que evalúe esta atención y proporcione opciones para mejorar? Sí o No? Servicio al Cliente
 ==========::==========
 ==========Respuesta del prompt IMPROVED by OrderId:==========
 ==========::==========
-Soy el Asistente de Servicio al Cliente. Estoy aquí para informarte sobre el estado de tu pedido y ayudarte con cualquier otra consulta relacionada con compras en la tienda.
+Soy el Asistente de Servicio al Cliente. Estoy aquí para informarte sobre el estado de tu pedido y ayudarte con cualquier otra consulta 
+relacionada con compras en la tienda.
 
 Aquí tienes los detalles de tu pedido con número de seguimiento 20084:
 
 - Número de seguimiento: 20084
 - ID de pedido: ECO-2509-20084
-- Nombre del cliente: Andrés Ramírez
+- Cliente: Andrés Ramírez
 - Ciudad: Cartagena
 - Producto: Vegano Producto 149
 - Categoría: Hogar
 - Estado: Procesando
 - Transportista: DHL
-- Notas: Confirmación de inventario.
-- Retraso: No
-- Fecha estimada de entrega: 2025-09-28
+- Observaciones: Confirmación de inventario.
+- Estimado de entrega: 2025-09-28
 - Última actualización: 2025-09-26
 
-Tu pedido está actualmente en proceso y en etapa de confirmación de inventario. No hay retrasos reportados y la entrega está estimada para el 28 de septiembre de 2025.
+Tu pedido está actualmente en proceso y se encuentra en la etapa de confirmación de inventario. Esto significa que estamos preparando 
+todo para que llegue a ti lo antes posible. Agradecemos tu paciencia y confianza.
 
-Gracias por confiar en nosotros. ¿Te gustaría que revise otro pedido o ayude con algo más?
+📌📌 [Realiza seguimiento de tu pedido en el siguiente enlace](https://tracking.ecomarket.example/dhl/20084) 🤖
 
-PS: 📌📌 [Realiza seguimiento de tu pedido en el siguiente enlace](https://tracking.ecomarket.example/dhl/20084) 🤖
-
-¿Te gustaría que evalúe esta atención y proporcione opciones para mejorar? Sí o No? Servicio al Cliente
+Gracias por confiar en nosotros. ¿Te gustaría que revise otro pedido o ayude con algo más? ¿Te gustaría que evalúe esta atención y proporcione 
+opciones para mejorar? Sí o No? Servicio al Cliente
 ==========::==========
 ==========Respuesta del prompt IMPROVED - Delayed:==========
 ==========::==========
-Soy el Asistente de Servicio al Cliente. Estoy aquí para informarte sobre el estado de tu pedido y ayudarte con cualquier otra consulta relacionada con compras en la tienda.
+Soy el Asistente de Servicio al Cliente. Estoy aquí para informarte sobre el estado de tu pedido y ayudarte con cualquier otra consulta relacionada 
+con compras en la tienda.
 
-El pedido con número de seguimiento 20018, solicitado por María Rodríguez en Barranquilla, corresponde al producto "Integral Producto 454" de la categoría Bebidas. Actualmente, el estado de tu pedido es "Procesando". La fecha estimada de entrega es el 2025-10-04. En este momento, está en la fase de confirmación de inventario, por lo que aún no ha sido enviado. No hay indicios de retraso en este pedido.
+El pedido con número de seguimiento 20018, solicitado por María Rodríguez en Barranquilla, corresponde al producto "Integral Producto 454" de la 
+categoría Bebidas. Actualmente, el estado de tu pedido es "Procesando", con una estimación de entrega para el 2025-10-04. 
+No hay indicios de retraso, y la última actualización fue el 2025-09-26. El transportista asignado es DHL.
 
-Detalle del pedido:
+Aquí tienes el detalle completo del pedido:
 - Número de seguimiento: 20018
-- ID de pedido: ECO-2509-20018
+- ID del pedido: ECO-2509-20018
 - Cliente: María Rodríguez
 - Ciudad: Barranquilla
 - Producto: Integral Producto 454
 - Categoría: Bebidas
 - Estado: Procesando
-- Transportadora: DHL
+- Transportista: DHL
 - Notas: Confirmación de inventario.
-- Retrasado: No
-- Fecha estimada de entrega: 2025-10-04
+- Estimado de entrega: 2025-10-04
 - Última actualización: 2025-09-26
 
-Agradecemos tu confianza en nuestra tienda. ¿Te gustaría que revise otro pedido o ayude con algo más?
+Tu pedido está en proceso de confirmación de inventario, lo que puede tomar un poco más de tiempo antes de ser enviado. Agradecemos tu paciencia y confianza.
+
+¿Te gustaría que revise otro pedido o ayude con algo más?
 
 PS: 📌📌 [Realiza seguimiento de tu pedido en el siguiente enlace](https://tracking.ecomarket.example/dhl/20018) 🤖
 
@@ -90,31 +103,25 @@ PS: 📌📌 [Realiza seguimiento de tu pedido en el siguiente enlace](https://t
 ==========::==========
 Soy el Agente de Servicio al Cliente. Estoy aquí para ayudarte con tu solicitud de devolución y para brindarte claridad sobre el proceso y la política aplicable.
 
-He encontrado el pedido con número de seguimiento 20080 y orden ECO-2509-20080. Aquí están los detalles del pedido:
-- Cliente: Valentina López
-- Ciudad: Cartagena
-- Producto: Integral Artículo 19
-- Categoría: Hogar
+He encontrado el pedido con número de seguimiento 20058. Aquí están los detalles del pedido:
+- Número de seguimiento: 20058
+- ID de pedido: ECO-2509-20058
+- Cliente: Ana Pérez
+- Ciudad: Bogotá
+- Producto: Integral Artículo 360
+- Categoría: Bebidas
 - Estado: Entregado
-- Transportista: Servientrega
-- Fecha estimada de entrega (ETA): 2025-10-05
-- Última actualización: 2025-09-23
-- Notas: Entrega realizada.
+- Transportista: DHL
+- Fecha estimada de entrega (ETA): 2025-09-26
 
-Según nuestra política de devoluciones, los pedidos en estado "Entregado" son elegibles para devolución, y este pedido cumple con ese criterio. Además, el producto pertenece a la categoría "Hogar", que no está excluida de devoluciones, y la solicitud está dentro del plazo de 30 días posteriores a la entrega.
+Según nuestra política de devoluciones, los productos de las categorías "Bebidas" y "Alimentos" no son elegibles para devolución debido a que 
+son productos perecederos o con una vida útil corta, además de que no resultan higiénicos una vez abiertos. Por lo tanto, lamentablemente 
+este pedido no es elegible para devolución.
 
-Para proceder con la devolución, por favor sigue estos pasos:
-1. Embalaje: Asegúrate de empacar el producto en su embalaje original, con todos los accesorios, manuales y etiquetas intactas.
-2. Envío: Utiliza una empresa de mensajería confiable para enviar el producto a la dirección que te proporcionaremos una vez confirmes la devolución.
-3. Plazo: La devolución debe realizarse dentro de los 7 días posteriores a la aprobación de la solicitud.
-4. Reembolso: Una vez recibido y verificado el producto, procesaremos el reembolso en un plazo de 10 a 15 días hábiles a través del método de pago original.
-5. Seguimiento: Te proporcionaremos un número de seguimiento para que puedas monitorear el estado de la devolución.
+Agradecemos mucho tu comprensión y la confianza depositada en nosotros. Si necesitas ayuda con alguna otra consulta o tienes alguna otra inquietud, 
+no dudes en contactarnos.
 
-Por favor, confirma que deseas proceder con la devolución para enviarte la dirección y los detalles adicionales.
-
-Gracias por confiar en nosotros. Si necesitas más ayuda, estoy a tu disposición.
-
-PS: 📌📌 [Realiza seguimiento de tu pedido en el siguiente enlace](https://tracking.ecomarket.example/servientrega/20080) 🤖
+PS: 📌📌 [Realiza seguimiento de tu pedido en el siguiente enlace](https://tracking.ecomarket.example/dhl/20058) 🤖
 
 ¿Te gustaría que evalúe esta atención y proporcione opciones para mejorar? Sí o No?
 ==========::==========
@@ -129,23 +136,30 @@ He revisado el pedido con número de seguimiento 20080 y orden ECO-2509-20080. A
 - Producto: Integral Artículo 19
 - Categoría: Hogar
 - Estado: Entregado
-- Transportista: Servientrega
+- Transportadora: Servientrega
 - Fecha estimada de entrega: 2025-10-05
+- Última actualización: 2025-09-23
+- Notas: Entrega realizada.
 
-Según nuestra política de devoluciones, los pedidos en estado "Entregado" son elegibles para devolución. Además, el producto pertenece a la categoría "Hogar", que es elegible para devolución (a diferencia de "Bebidas" y "Alimentos" que no lo son). La solicitud está dentro del plazo de 30 días después de la entrega.
+Según nuestra política de devoluciones, los pedidos en estado "Entregado" son elegibles para devolución, siempre que la solicitud se realice 
+dentro de los 30 días posteriores a la fecha de entrega y que el producto no pertenezca a categorías excluidas como Bebidas, Alimentos, 
+productos de higiene personal o perecederos. En este caso, el producto pertenece a la categoría "Hogar", por lo que es elegible para devolución.     
 
-Para realizar la devolución, por favor sigue estos pasos:
+Para proceder con la devolución, por favor sigue estos pasos:
 
-1. Empaqueta el producto en su embalaje original, asegurándote de que esté en condiciones adecuadas para su transporte.
+1. Empaque el producto cuidadosamente en su embalaje original o en uno adecuado para evitar daños durante el transporte.
 2. Incluye una copia de la factura o comprobante de compra dentro del paquete.
-3. Envía el paquete a la dirección de devoluciones que te proporcionaremos una vez confirmes la solicitud.
-4. El envío debe realizarse dentro de los próximos 7 días hábiles.
-5. Una vez recibido y verificado el producto, procesaremos el reembolso en un plazo de 10 días hábiles. Te notificaremos cuando se haya completado.
+3. Contacta a nuestro centro de atención para coordinar la recogida o el envío del paquete a nuestro centro de devoluciones.
+4. Asegúrate de enviar el paquete dentro de los 7 días hábiles siguientes a la solicitud de devolución.
+5. Una vez recibido y verificado el producto, procesaremos el reembolso en el mismo método de pago utilizado en la compra. 
+El tiempo estimado para el reembolso es de 10 a 15 días hábiles.
+6. Puedes realizar el seguimiento de tu devolución y reembolso a través de nuestro portal de atención al cliente.
 
-Si necesitas la dirección de devolución o cualquier otra asistencia, estoy aquí para ayudarte.
+Si necesitas asistencia adicional para coordinar la devolución, no dudes en contactarnos.
 
-Gracias por confiar en nosotros. ¿Te gustaría que evalúe esta atención y proporcione opciones para mejorar? Sí o No?
+Gracias por confiar en nosotros. Estamos aquí para ayudarte en lo que necesites.
 
 PS: 📌📌 [Realiza seguimiento de tu pedido en el siguiente enlace](https://tracking.ecomarket.example/servientrega/20080) 🤖
-==========::==========
+
+¿Te gustaría que evalúe esta atención y proporcione opciones para mejorar? Sí o No?
 ==========::==========
