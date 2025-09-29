@@ -119,3 +119,11 @@ uv run python main.py
 
 Edita el archivo `prompts.txt` para modificar las instrucciones y respuestas del chatbot según tus necesidades.
 
+## Ejemplos Personalización de Prompts
+Para efectos de la replicacion de los escenarios de prueba se pueden usar los siguientes pedidos 
+20,004 ECO-2509-20004
+20,009 ECO-2509-20009
+20,011 ECO-2509-20011
+20,012 ECO-2509-20012
+20,027 ECO-2509-20027
+O en su defecto consultar los pedidos extraidos del dataser con el endpoint https://datasets-server.huggingface.co/rows?dataset=cam2149%2FEcoMarket&config=default&split=train&offset=0&length=100
