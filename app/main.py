@@ -1,4 +1,5 @@
 import os
+from tkinter.messagebox import IGNORE
 from azure.ai.inference.models import SystemMessage, UserMessage
 from openai import AzureOpenAI, api_version
 from dotenv import load_dotenv
@@ -6,6 +7,7 @@ from fastapi import FastAPI
 import httpx
 import threading
 import tomllib
+import time
 from pathlib import Path
 
 # Load settings file
@@ -137,10 +139,9 @@ def getResponseEnhancedDelayed(
     """Muestra una respuesta mejorada del modelo. """
     messages = [
         SystemMessage(content=get_prompt("IMPROVED").format(contexto=contexto)),
-        UserMessage(content="¿Quiero saber porque no se ha entregado el pedido 20003?"),
+        UserMessage(content=SETTINGS["chats"]["responseEnhancedDelayed"]),
     ]
     print(getResponse(client, messages))
-
 
 def getResponseReturnProductNotEligible(
     client, contexto: str
@@ -149,11 +150,10 @@ def getResponseReturnProductNotEligible(
     messages = [
         SystemMessage(content=get_prompt("REFUND").format(contexto=contexto)),
         UserMessage(
-            content="El pedido 20104 que pedí ya no lo necesito, ¿Puedo devolverlo?"
+            content=SETTINGS["chats"]["responseReturnProductNotEligible"]
         ),
     ]
     print(getResponse(client, messages))
-
 
 def getResponseReturnProductEligible(
     client, contexto: str
@@ -162,13 +162,11 @@ def getResponseReturnProductEligible(
     messages = [
         SystemMessage(content=get_prompt("REFUND").format(contexto=contexto)),
         UserMessage(
-            content="El embalaje del producto está dañado, ¿Como puedo devolver todos los productos del ECO-2509-20135?"
+            content=SETTINGS["chats"]["responseReturnProductEligible"]
         ),
     ]
     print(getResponse(client, messages))
 
-
-import time
 def get_orders():
     """Obtiene la lista de pedidos desde el endpoint FastAPI /get_order."""
     global orders_cache
@@ -188,11 +186,8 @@ def get_orders():
     except Exception as e:
         return f"Error al leer pedidos desde FastAPI: {str(e)}"
 
-
 def print_enmarcado(texto):
     print(f"{'='*10}{texto}{'='*10}")
-
-
 
 def main():
     """Función principal para ejecutar el flujo de trabajo."""
@@ -208,8 +203,8 @@ def main():
     listOrders = get_orders()
     print_enmarcado("::")
    # print_enmarcado(f"Lista de pedidos: {listOrders}")
-    
     client = init_client()
+   
     print_enmarcado("Respuesta del prompt BASIC:")
     getResponseBasic(client, listOrders)
     print_enmarcado("::")
@@ -219,22 +214,27 @@ def main():
     print_enmarcado("::")
     
     print_enmarcado("Respuesta del prompt IMPROVED:")
+    print_enmarcado("::")
     getResponseImproved(client, listOrders)
     print_enmarcado("::")
 
     print_enmarcado("Respuesta del prompt IMPROVED by OrderId:")
+    print_enmarcado("::")
     getResponseImprovedByOrderId(client, listOrders)
     print_enmarcado("::")
-    
+     
     print_enmarcado("Respuesta del prompt IMPROVED - Delayed:")
+    print_enmarcado("::")
     getResponseEnhancedDelayed(client, listOrders)
     print_enmarcado("::")
-    
+ 
     print_enmarcado("Respuesta del prompt REFUND - Producto no elegible para devolución:")
+    print_enmarcado("::")
     getResponseReturnProductNotEligible(client, listOrders)
     print_enmarcado("::")
    
     print_enmarcado("Respuesta del prompt REFUND - Producto elegible para devolución:")
+    print_enmarcado("::")
     getResponseReturnProductEligible(client, listOrders)
     print_enmarcado("::")
     

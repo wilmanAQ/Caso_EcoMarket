@@ -16,6 +16,9 @@ endpoint = "https://openaigeneai.openai.azure.com/"
 [chats]
 responseBasic = "Dame el estado del pedido de Atorvastatina"
 responseBasicByOrderId = "Dame el estado del pedido 20009"
-responseImprovedByOrderId = "Dame el estado del id pedido 20109"
+responseImprovedByOrderId = "Dame el estado del pedido 20084"
+responseEnhancedDelayed = "¿Quiero saber porque no se ha entregado el pedido 20018?"
+responseReturnProductEligible ="¿Como puedo devolver todos los productos del 20080?"
+responseReturnProductNotEligible = "El pedido 20080 que pedí ya no lo necesito, ¿Como puedo devolverlo?"
 
 
