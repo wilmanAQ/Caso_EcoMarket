@@ -8,40 +8,14 @@ La aplicación utiliza ingeniería de prompts para interactuar con modelos de IA
 
 El sistema puede obtener pedidos desde fuentes externas y procesar solicitudes de devolución, todo mediante interacción conversacional.
 
-==========::==========
-==========Inicializando FastAPI:==========
-==========::==========
-INFO:     Started server process [45824]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-==========Modelo seleccionado: gpt-4.1-mini==========
-==========::==========
-INFO:     127.0.0.1:55358 - "GET /get_order HTTP/1.1" 200 OK
-==========::==========
-==========Respuesta del prompt BASIC:==========
-No se encontró ningún pedido con el producto "Atorvastatina" en el registro proporcionado. ¿Podrías verificar el nombre del producto o proporcionar un número de seguimiento para ayudarte mejor?
-==========::==========
-==========Respuesta del prompt BASIC by OrderId:==========
-El pedido con número de seguimiento 20009, correspondiente a la orden ECO-2509-20009 para Laura Díaz en Bucaramanga, tiene el siguiente estado:
 
-
-////////////////////////////////////////////////////
-
-| Section                         | Details                                               | Message                                                                                                         |
-|--------------------------------|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| --------        |  Initializing FastAPI:           | INFO: Started server process [45824] <br> INFO: Waiting for application startup. <br> INFO: Application startup complete. <br> INFO: Uvicorn running on [http://127.0.0.1:8000](http://127.0.0.1:8000/) (Press CTRL+C to quit) |
-| Model Selected | GPT-4.1-mini                                        | -                                                                                                              |
-| -------       | INFO: 127.0.0.1:55358 - "GET /get_order HTTP/1.1" 200 OK | -                                                                                                              |
-| *Response to BASIC prompt | -                                                  | No orders found with product "Atorvastatin" in the provided log. Could you verify the product name or provide a tracking number to assist you better? |
-|  Response to BASIC prompt by OrderId  | Tracking number: 20009                             | The order with tracking number 20009, corresponding to order ECO-2509-20009 for Laura Díaz in Bucaramanga, has the following status: |
-
-
-
-
-
-
-////////////////////////////////////////////////////
+| Sección                           | Detalles                                               | Mensaje                                                                                                         |
+|----------------------------------|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| ::            |  Inicializando FastAPI:           | INFO: Proceso iniciado [45824] <br> INFO: Esperando inicio de la aplicación. <br> INFO: Inicio de aplicación completo. <br> INFO: Uvicorn corriendo en [http://127.0.0.1:8000](http://127.0.0.1:8000/) (Presiona CTRL+C para salir) |
+| Modelo seleccionado | GPT-4.1-mini                                        | Modelo cargado con éxito y listo para procesar solicitudes                                                      |
+| ==========::==========             | INFO: 127.0.0.1:55358 - "GET /get_order HTTP/1.1" 200 OK | Solicitud procesada correctamente con código de estado 200                                                    |
+|Respuesta al prompt BASIC | No se encontraron pedidos coincidentes                | No se encontró ningún pedido con el producto "Atorvastatina" en el registro. ¿Podrías verificar el nombre del producto o proporcionar un número de seguimiento para ayudarte mejor? |
+|Respuesta al prompt BASIC por OrderId | Número de seguimiento: 20009                           | El pedido con número de seguimiento 20009, correspondiente a la orden ECO-2509-20009 para Laura Díaz en Bucaramanga, tiene el siguiente estado: |
 
 
 - Producto: Premium Producto 698 (Categoría: Alimentos)
@@ -53,13 +27,13 @@ El pedido con número de seguimiento 20009, correspondiente a la orden ECO-2509-
 - Enlace de seguimiento: https://tracking.ecomarket.example/coordinadora/20009
 
 Si necesitas más información, estoy aquí para ayudarte.
-==========::==========
-==========Respuesta del prompt IMPROVED:==========
+::
+Respuesta del prompt IMPROVED:
 Hola, soy el Asistente de Servicio al Cliente. Para poder brindarte el estado actualizado de tu pedido de Atorvastatina, necesitaría el número de seguimiento o pedido correspondiente. Por favor, proporciónamelo para ayudarte de manera eficiente.
 
 ¿Te gustaría que evalúe esta atención y proporcione opciones para mejorar? Sí o No? Servicio al Cliente
-==========::==========
-==========Respuesta del prompt IMPROVED by OrderId:==========
+::
+Respuesta del prompt IMPROVED by OrderId:
 Hola, soy el Asistente de Servicio al Cliente. Estoy aquí para informarte sobre el estado de tu pedido y ayudarte con cualquier otra consulta relacionada con compras en la tienda.
 
 El pedido con número de seguimiento 20109 se encuentra actualmente en proceso. Estamos preparando tu paquete para su envío, y estimamos que llegará a tu domicilio en un plazo de 3 a 5 días hábiles. Agradecemos tu paciencia y te aseguramos que estamos trabajando para que recibas tu compra lo antes posible.
@@ -70,7 +44,7 @@ PS: 📌📌 [Realiza seguimiento de tu pedido en el siguiente enlace](https://w
 
 ¿Te gustaría que evalúe esta atención y proporcione opciones para mejorar? Sí o No? Servicio al Cliente
 ==========::==========
-==========Respuesta del prompt IMPROVED - Delayed:==========
+Respuesta del prompt IMPROVED - Delayed:
 Hola, soy el Asistente de Servicio al Cliente. Estoy aquí para informarte sobre el estado de tu pedido y ayudarte con cualquier otra consulta relacionada con compras en la tienda.
 
 Respecto a tu pedido número 20003, actualmente se encuentra en estado "en proceso". Esto significa que estamos preparando tu pedido para su envío y estimamos que será despachado en los próximos 2 días hábiles. Agradecemos tu paciencia y comprensión mientras trabajamos para entregarlo lo antes posible.
@@ -81,7 +55,7 @@ Si tienes alguna otra duda o necesitas asistencia adicional, no dudes en decírm
 
 ¿Te gustaría que evalúe esta atención y proporcione opciones para mejorar? Sí o No? Servicio al Cliente
 ==========::==========
-==========Respuesta del prompt REFUND - Producto no elegible para devolución:==========
+Respuesta del prompt REFUND - Producto no elegible para devolución:
 Soy el Agente de Servicio al Cliente. Estoy aquí para ayudarte con tu solicitud de devolución y para brindarte claridad sobre el proceso y la política aplicable.
 
 He verificado el pedido número 20104. Para determinar la elegibilidad de la devolución, según nuestra política vigente, es necesario que el pedido esté en estado "Delivered" y que la solicitud se realice dentro de los 30 días posteriores a la entrega. Además, no debe tratarse de productos en oferta, descuentos, perecederos, de higiene, Wireless o de las categorías Bebidas y Alimentos.
@@ -101,7 +75,7 @@ PS: 📌📌 [Realiza seguimiento de tu pedido en el siguiente enlace](https://t
 
 ¿Te gustaría que evalúe esta atención y proporcione opciones para mejorar? Sí o No?
 ==========::==========
-==========Respuesta del prompt REFUND - Producto elegible para devolución:==========
+Respuesta del prompt REFUND - Producto elegible para devolución:
 Hola, soy el Agente de Servicio al Cliente. Estoy aquí para ayudarte con tu solicitud de devolución y para brindarte claridad sobre el proceso y la política aplicable.
 
 He revisado el pedido con número de seguimiento ECO-2509-20135. Para determinar la elegibilidad de la devolución, es importante considerar lo siguiente según nuestra política:
