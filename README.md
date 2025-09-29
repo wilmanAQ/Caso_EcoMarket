@@ -12,7 +12,7 @@ La aplicación utiliza ingeniería de prompts para interactuar con modelos de IA
 
 El sistema puede obtener pedidos desde fuentes externas y procesar solicitudes de devolución, todo mediante interacción conversacional.
 
-## Descripción de la ejecución - Ejemplo de salida 
+## Ejemplo de salida 
     
 ```plaintext
 ==========::==========
